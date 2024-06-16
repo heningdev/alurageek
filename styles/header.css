@@ -1,0 +1,29 @@
+@import url('colors.css');
+@import url('general.css');
+
+
+.header {
+    background-color: var(--color-principal);
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fa-ghost {
+    --fa-animation-duration: 2.5s;
+    --fa-fade-opacity: .6;
+}
+
+.header-titulo {
+    color: var(--color-black);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.header h2 {
+    -webkit-text-stroke: .3px white;
+    text-stroke: .3px white;
+}
