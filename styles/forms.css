@@ -1,0 +1,27 @@
+@import url('./colors.css');
+
+.crud-titulo {
+    font-size: 1.5rem;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+input:focus {
+    border-color: var(--color-principal-dark); 
+    outline: none; 
+    box-shadow: 0 0 5px var(--color-principal-rgba);
+}
+
+.form-buttons .guardar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-buttons .limpar {
+    background-color: #f44336;
+    color: white;
+}
+
+.form-buttons button:hover {
+    opacity: 0.8;
+}

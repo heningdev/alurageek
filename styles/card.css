@@ -1,0 +1,35 @@
+@import url('./colors.css');
+@import url('./general.css');
+
+.card-produto {
+    border: 2px var(--color-principal-dark) solid;
+    border-radius: .7rem;
+    background-color: var(--color-secundaria);
+}
+
+.card-produto img {
+    background-color: white;
+    border: 2px var(--color-principal-dark) solid;
+    border-radius: .5em;
+    box-shadow: 0 -.4rem .5rem rgba(0, 0, 0, .25);
+}
+
+.nome-produto {
+    font-family: 'IMB Plex Mono', monospace;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.descricao-produto,
+.card-footer {
+    color: var(--color-light);
+}
+
+.fa-trash-can {
+    font-size: 1.2em;
+}
+
+.fa-trash-can:hover {
+    color: var(--color-red);
+    scale: 1.4;
+}

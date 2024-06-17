@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
     --color-principal: #005C78;
     --color-secundaria: #006989;
+    --color-principal-dark: #003342;
     --color-orange: #E88D67;
     --color-light: #F3F7EC;
     --color-red: #C80036;
+
+    /* RGBA */
+    --color-principal-rgba: rgba(0, 92, 120, 0.5);     
+    --color-secundaria-rgba: rgba(0, 105, 137, 0.5);   
+    --color-principal-dark-rgba: rgba(0, 51, 66, 0.5); 
+    --color-orange-rgba: rgba(232, 141, 103, 0.5);     
+    --color-light-rgba: rgba(243, 247, 236, 0.5);      
+    --color-red-rgba: rgba(200, 0, 54, 0.5);           
 
 }

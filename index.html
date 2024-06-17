@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
@@ -27,6 +28,71 @@
         </div>
     </header>
 
+    <section class="main-container">
+        <div class="main-container-produtos">
+            <h2 class="produtos-titulo">Meus Produtos:</h2>
+            <div class="lista-produtos-wrapper">
+                <div class="lista-produtos">
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-produtos">
+            <h2 class="crud-titulo">Adicionar produto:</h2>
+            <div class="form-group">
+                <input type="text" id="nome-produto" name="nome-produto" placeholder="Nome...">
+            </div>
+            <div class="form-group">
+                <input type="text" id="valor-produto" name="valor-produto" placeholder="Valor...">
+            </div>
+            <div class="form-group">
+                <label for="imagem-produto">Imagem:</label>
+                <input type="file" id="imagem-produto" name="imagem-produto" class="custom-file-input">
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="guardar">Guardar</button>
+                <button type="reset" class="limpar">Limpar</button>
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    document.getElementById('imagem-produto').addEventListener('change', function () {
+        var fileName = this.files[0].name;
+        document.getElementById('custom-file-button').textContent = 'Arquivo selecionado: ' + fileName;
+    });
+</script>
 
 </html>
