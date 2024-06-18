@@ -1,0 +1,15 @@
+@import url('./colors.css');
+
+.form-buttons .guardar {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.form-buttons .limpar {
+    background-color: var(--color-red);
+    color: white;
+}
+
+.form-buttons button:hover {
+    opacity: 0.8;
+}
