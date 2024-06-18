@@ -10,11 +10,11 @@
     --color-red: #C80036;
 
     /* RGBA */
-    --color-principal-rgba: rgba(0, 92, 120, 0.5);     
-    --color-secundaria-rgba: rgba(0, 105, 137, 0.5);   
-    --color-principal-dark-rgba: rgba(0, 51, 66, 0.5); 
-    --color-orange-rgba: rgba(232, 141, 103, 0.5);     
-    --color-light-rgba: rgba(243, 247, 236, 0.5);      
-    --color-red-rgba: rgba(200, 0, 54, 0.5);           
+    --color-principal-rgba: rgba(0, 92, 120, 0.5);
+    --color-secundaria-rgba: rgba(0, 105, 137, 0.5);
+    --color-principal-dark-rgba: rgba(0, 51, 66, 0.5);
+    --color-orange-rgba: rgba(232, 141, 103, 0.5);
+    --color-light-rgba: rgba(243, 247, 236, 0.5);
+    --color-red-rgba: rgba(200, 0, 54, 0.5);
 
 }
