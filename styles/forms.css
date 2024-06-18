@@ -7,21 +7,20 @@
 }
 
 input:focus {
-    border-color: var(--color-principal-dark); 
-    outline: none; 
+    border-color: var(--color-principal-dark);
+    outline: none;
     box-shadow: 0 0 5px var(--color-principal-rgba);
 }
 
-.form-buttons .guardar {
-    background-color: #4CAF50;
+.custom-file-label {
+    background-color: var(--color-principal-dark);
     color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.form-buttons .limpar {
-    background-color: #f44336;
-    color: white;
-}
-
-.form-buttons button:hover {
-    opacity: 0.8;
+.file-name {
+    font-style: italic;
+    color: var(--color-principal-rgba);
 }
