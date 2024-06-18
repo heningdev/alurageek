@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
 <body>
@@ -64,6 +65,47 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <img src="./img/goku.png" alt="Imagem do Produto">
+                        <div class="descricao-produto">
+                            <h3 class="nome-produto">Nome do produto</h3>
+                            <div class="card-footer">
+                                <p class="preco-produto">R$50,00</p>
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,9 +117,14 @@
             <div class="form-group">
                 <input type="text" id="valor-produto" name="valor-produto" placeholder="Valor...">
             </div>
-            <div class="form-group">
-                <label for="imagem-produto">Imagem:</label>
-                <input type="file" id="imagem-produto" name="imagem-produto" class="custom-file-input">
+            <div class="form-group-up">
+                <div class="custom-file-input-wrapper">
+                    <label for="imagem-produto" class="custom-file-label">Imagem:</label>
+                    <input type="file" id="imagem-produto" name="imagem-produto" class="custom-file-input"
+                        onchange="updateFileName()">
+                    <span class="file-name">Nenhum arquivo selecionado</span>
+                </div>
+
             </div>
             <div class="form-buttons">
                 <button type="button" class="guardar">Guardar</button>
@@ -86,13 +133,31 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <i class="fa-solid fa-ghost fa-fade"></i>
+            </div>
+            <h2 class="footer-titulo">AluraGeek</h2>
+            <div class="footer-logo">
+                <i class="fa-solid fa-ghost fa-fade"></i>
+            </div>
+        </div>
+        <div class="footer-info">
+            <h3 class="dev">DESENVOLVIDO POR <span>HNG.DEV</span></h3>
+            <p class="escola">ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+
 </body>
 
 <script>
-    document.getElementById('imagem-produto').addEventListener('change', function () {
-        var fileName = this.files[0].name;
-        document.getElementById('custom-file-button').textContent = 'Arquivo selecionado: ' + fileName;
-    });
+    function updateFileName() {
+        const input = document.getElementById('imagem-produto');
+        const fileName = input.files.length > 0 ? input.files[0].name : 'Nenhum arquivo selecionado';
+        document.querySelector('.file-name').textContent = fileName;
+    }
+
 </script>
 
 </html>
