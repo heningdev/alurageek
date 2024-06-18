@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 85%;
+    }
+
+    .add-produtos {
+        order: 1;
+    }
+
+    .main-container-produtos {
+        order: 2;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+    }
+
+    .produtos-titulo {
+        margin-top: 20%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-group-up {
+        width: 100%;
+    }
+
+}
