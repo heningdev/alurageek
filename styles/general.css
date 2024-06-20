@@ -51,6 +51,7 @@ footer {
     overflow-y: auto;
     padding-right: 1em;
     max-height: 60vh;
+    width: 100%;
 }
 
 /* Card */
@@ -58,7 +59,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: .5em;
-    height: 18em;
+    height: 16.5em;
     padding: .5em;
 }
 
