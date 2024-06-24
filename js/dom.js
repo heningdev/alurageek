@@ -35,28 +35,14 @@ document.addEventListener('click', async (event) => {
             const productElement = document.getElementById(`product-${productId}`);
             if (productElement) {
                 productElement.remove();
-                showSnackbar('Produto removido com sucesso', 'sucess');
             } else {
                 console.warn(`Produto com ID ${productId} não encontrado no DOM.`);
             }
         } else {
             console.error(`Erro ao tentar excluir o produto com ID ${productId}.`);
-            showSnackbar('Erro ao excluir o produto', 'error');
         }
     }
 });
-
-// Função para mostrar o snackbar
-function showSnackbar(message, colorClass) {
-    const snackbar = document.getElementById('snackbar');
-    snackbar.textContent = message;
-    snackbar.style.backgroundColor = colorClass;
-    snackbar.style.visibility = 'visible';
-
-    setTimeout(() => {
-        snackbar.style.visibility = 'hidden';
-    }, 300000); // Tempo de exibição do snackbar (3 segundos neste exemplo)
-}
 
 // Função para limpar os campos do formulário
 window.clearFields = function () {
@@ -82,9 +68,7 @@ window.addProduct = async function () {
     if (createdProduct) {
         appendProduct(createdProduct);
         clearFields();
-        showSnackbar('Produto adicionado com sucesso', '--color-green');
     } else {
         console.error('Erro ao adicionar o produto.');
-        showSnackbar('Erro ao adicionar o produto', '--color-red');
     }
 };
