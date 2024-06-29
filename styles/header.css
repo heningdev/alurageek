@@ -4,24 +4,24 @@
 
 .header {
     background-color: var(--color-principal);
-    box-shadow: 0 .4rem 0rem rgba(0, 0, 0, .15);
+    box-shadow: 0 .2rem 0rem rgba(0, 0, 0, .15);
+    color: var(--color-light);
 }
 
 .header-logo {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 2rem;
+    color: var(--color-accent);
 }
 
-.fa-ghost {
-    --fa-animation-duration: 2.5s;
+.fa-dungeon {
+    --fa-animation-duration: 4.5s;
     --fa-fade-opacity: .6;
 }
 
 .header-titulo {
-    color: var(--color-black);
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: "Press Start 2P", system-ui;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header h2 {

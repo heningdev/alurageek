@@ -5,6 +5,11 @@ footer {
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-principal-dark);
+}
+
 /* Header */
 .header {
     display: flex;
@@ -14,6 +19,7 @@ footer {
     width: 100%;
     height: 7vh;
     margin-bottom: 3%;
+    padding: 1rem 2rem;
 }
 
 /* Main */
@@ -35,7 +41,9 @@ footer {
 
 .produtos-titulo {
     margin-top: 2%;
-    margin-bottom: 6%;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .lista-produtos-wrapper {
@@ -44,7 +52,7 @@ footer {
 
 .lista-produtos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2%;
     margin: 2%;
     box-sizing: border-box;
@@ -54,48 +62,11 @@ footer {
     width: 100%;
 }
 
-/* Card */
-.card-produto {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    height: 16.5em;
-    padding: .5em;
-}
-
-.card-produto img {
-    width: 95%;
-    height: 75%;
-    align-self: center;
-}
-
-.descricao-produto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.nome-produto,
-.card-footer {
-    margin: 2%;
-}
-
-.card-footer {
-    margin-top: 6%;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;
-}
-
 /* Crud */
 .add-produtos {
     display: flex;
     flex-direction: column;
-    gap: .8em;
+    gap: 0.8em;
     align-items: center;
 }
 
@@ -109,43 +80,16 @@ footer {
     margin-bottom: 1em;
 }
 
-.form-group-up {
-    width: 50%;
-    margin-bottom: 1em;
-}
-
 .form-group input[type="text"],
 .form-group input[type="file"] {
     width: 100%;
     padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: .4em;
+    border: 1px solid var(--color-secondary-text);
+    border-radius: 0.4em;
     box-sizing: border-box;
-    font-family: "Press Start 2P", system-ui;
     cursor: pointer;
 }
 
-.form-group label {
-    font-family: "Press Start 2P", system-ui;
-    margin-bottom: .3em;
-}
-
-.form-group-up label {
-    margin-bottom: .3em;
-}
-
-/* Upload Button */
-.custom-file-input-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.custom-file-input {
-    display: none;
-}
-
-/* Buttons */
 .form-buttons {
     display: flex;
     flex-direction: row;
@@ -156,31 +100,29 @@ footer {
 .form-buttons button {
     padding: 1em 1.5em;
     border: none;
-    border-radius: .4em;
+    border-radius: 0.4em;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Footer */
-.footer {
+.footer-top {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: 18vh;
 }
 
-.footer-header {
+.footer-left {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     gap: 1rem;
 }
 
-.footer-info {
+.footer-logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1em;
+    flex-direction: column;
+    gap: 1rem;
 }

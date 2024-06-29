@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>Dungeon Geek</title>
 
     <!-- RESET CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
@@ -16,22 +16,22 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- ICONE NAVEGADOR -->
+    <link rel="icon" href="/img/dungeon-solid.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/dungeon-solid.svg" type="image/x-icon">
 </head>
 
 <body>
     <header id="header" class="header">
         <div class="header-logo">
-            <i class="fa-solid fa-ghost fa-fade"></i>
+            <i class="fa-solid fa-dungeon fa-fade"></i>
         </div>
-        <h2 class="header-titulo">AluraGeek</h2>
-        <div class="header-logo">
-            <i class="fa-solid fa-ghost fa-fade"></i>
-        </div>
+        <h2 class="header-titulo">Dungeon Geek</h2>
     </header>
 
     <section class="main-container">
         <div class="main-container-produtos">
-            <h2 class="produtos-titulo">Meus Produtos:</h2>
+            <h2 class="produtos-titulo">Lista de Produtos:</h2>
             <div class="lista-produtos-wrapper">
                 <div class="lista-produtos" id="lista-produtos">
                     <!-- Local onde os produtos serão exibidos -->
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="add-produtos">
-            <h2 class="crud-titulo">Adicionar produto:</h2>
+            <h2 class="crud-titulo">Adicionar Produto:</h2>
             <div class="form-group">
                 <input type="text" id="nome-produto" name="nome-produto" placeholder="Nome...">
             </div>
@@ -57,20 +57,24 @@
     </section>
 
     <footer class="footer">
-        <div class="footer-header">
-            <div class="footer-logo">
-                <i class="fa-solid fa-ghost fa-fade"></i>
+        <div class="footer-top">
+            <div class="footer-left">
+                <p class="escola">ALURA LATAM - 2024</p>
+                <h3 class="dev">Desenvolvido por <a href="https://www.linkedin.com/in/hening-dev/">hng.dev</a></h3>
             </div>
-            <h2 class="footer-titulo">AluraGeek</h2>
             <div class="footer-logo">
-                <i class="fa-solid fa-ghost fa-fade"></i>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2 class="footer-titulo">Dungeon Geek</h2>
+            </div>
+            <div class="footer-right">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-        <div class="footer-info">
-            <h3 class="dev">DESENVOLVIDO POR <span>HNG.DEV</span></h3>
-            <p class="escola">ALURA LATAM - 2024</p>
-        </div>
+
     </footer>
+
 
     <script src="js/api.js" type="module"></script>
     <script src="js/dom.js" type="module"></script>

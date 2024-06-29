@@ -1,48 +1,67 @@
 @import url('./colors.css');
 
-.footer {
+footer {
     background-color: var(--color-principal);
-    box-shadow: 0 -.4rem 0rem rgba(0, 0, 0, .15);
+    color: var(--color-light);
+    padding: 2rem;
+    
+    box-shadow: 0 .2rem 0rem rgba(0, 0, 0, .15);
 }
 
-.footer-logo {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.fa-ghost {
-    --fa-animation-duration: 2.5s;
-    --fa-fade-opacity: .6;
+.footer-logo i {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-right: 1rem;
 }
 
 .footer-titulo {
-    color: var(--color-black);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
-    font-family: "Press Start 2P", system-ui;
 }
 
-.footer-header h2 {
-    -webkit-text-stroke: .3px white;
-    text-stroke: .3px white;
+.footer-right {
+    margin-right: 2rem;
 }
 
-.footer-info h3 {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1em;
+.footer-right i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    color: var(--color-facebook);
+}
+.fa-twitter {
+    color: var(--color-twitter);
+}
+.fa-instagram {
+    color: var(--color-instagram);
+}
+
+.footer-right i:hover {
+    opacity: .6;
+}
+
+.dev {
+    margin-left: 2.2rem;
+    opacity: .5;
+}
+
+.dev:hover {
+    opacity: 1;
+}
+
+.dev {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-secondary-text);
+}
+
+.dev a {
     color: var(--color-light);
-    font-weight: 400;
+    text-decoration: none;
 }
 
-.dev span {
-    color: white;
-    font-weight: 500;
-}
-
-.dev span:hover {
-    color: black;
-}
-
-.footer-info p {
-    color: white;
+.dev a:hover {
+    color: var(--color-accent);
 }

@@ -1,35 +1,68 @@
 @import url('./colors.css');
 @import url('./general.css');
 
+/* Card Produto */
 .card-produto {
-    border: 2px var(--color-principal-dark) solid;
-    border-radius: .7rem;
+    border: 1px solid var(--color-principal-dark);
+    border-radius: 0.7rem;
     background-color: var(--color-secundaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-produto img {
-    background-color: white;
-    border: 2px var(--color-principal-dark) solid;
-    border-radius: .5em;
-    box-shadow: 0 -.4rem .5rem rgba(0, 0, 0, .25);
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-principal-dark);
+    transition: transform 0.3s;
+}
+
+.card-produto:hover img {
+    transform: scale(1.05);
 }
 
 .nome-produto {
-    font-family: 'IMB Plex Mono', monospace;
-    font-weight: 400;
-    font-size: .9em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: var(--color-principal-dark);
+    text-align: center;
 }
 
-.descricao-produto,
+.descricao-produto {
+    padding: 1em;
+    text-align: center;
+}
+
 .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: var(--color-principal-dark);
     color: var(--color-light);
 }
 
-.fa-trash-can {
+.card-footer .preco-produto {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 1.2em;
 }
 
-.fa-trash-can:hover {
+.card-footer .fa-trash-can {
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card-footer .fa-trash-can:hover {
     color: var(--color-red);
-    scale: 1.4;
+    transform: scale(1.2);
 }

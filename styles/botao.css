@@ -1,13 +1,13 @@
 @import url('./colors.css');
 
 .form-buttons .guardar {
-    background-color: var(--color-principal);
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--color-light);
 }
 
 .form-buttons .limpar {
-    background-color: var(--color-red);
-    color: white;
+    background-color: var(--color-secondary-text);
+    color: var(--color-light);
 }
 
 .form-buttons button:hover {

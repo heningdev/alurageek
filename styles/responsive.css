@@ -7,10 +7,12 @@
 
     .add-produtos {
         order: 1;
+        /* Coloca o painel de adicionar produtos acima na ordem */
     }
 
     .main-container-produtos {
         order: 2;
+        /* Coloca a lista de produtos abaixo na ordem */
     }
 
     .lista-produtos {
@@ -18,19 +20,20 @@
         grid-template-columns: repeat(1, 1fr);
         flex-wrap: nowrap;
         overflow-x: auto;
-
     }
 
     .produtos-titulo {
         margin-top: 20%;
+        /* Margem superior para o título dos produtos */
     }
 
     .form-group {
         width: 100%;
+        /* Garante que os campos do formulário ocupem toda a largura disponível */
     }
 
     .form-group-up {
         width: 100%;
+        /* Mesma configuração para o formulário de atualização */
     }
-
 }
